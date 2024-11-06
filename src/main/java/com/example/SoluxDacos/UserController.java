@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/users/cd-test/retest")
+@RequestMapping("/api/users/cd-test/fix_cd")
 public class UserController {
 
     @Autowired
