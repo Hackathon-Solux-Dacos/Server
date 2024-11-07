@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.SoluxDacos.SoluxDacosApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-06T04:23:10" hostname="LAPTOP-FC832G35" time="0.528">
+<testsuite name="com.example.SoluxDacos.SoluxDacosApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-07T08:17:58" hostname="LAPTOP-FC832G35" time="0.742">
   <properties/>
-  <testcase name="contextLoads()" classname="com.example.SoluxDacos.SoluxDacosApplicationTests" time="0.528"/>
-  <system-out><![CDATA[13:23:04.909 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.SoluxDacos.SoluxDacosApplicationTests]: SoluxDacosApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:23:05.098 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.SoluxDacos.SoluxDacosApplication for test class com.example.SoluxDacos.SoluxDacosApplicationTests
+  <testcase name="contextLoads()" classname="com.example.SoluxDacos.SoluxDacosApplicationTests" time="0.742"/>
+  <system-out><![CDATA[17:17:51.172 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.SoluxDacos.SoluxDacosApplicationTests]: SoluxDacosApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:17:51.331 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.SoluxDacos.SoluxDacosApplication for test class com.example.SoluxDacos.SoluxDacosApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,22 +14,24 @@
 
  :: Spring Boot ::                (v3.3.5)
 
-2024-11-06T13:23:05.630+09:00  INFO 30152 --- [    Test worker] c.e.S.SoluxDacosApplicationTests         : Starting SoluxDacosApplicationTests using Java 17.0.11 with PID 30152 (started by user in C:\Yoon_SpringBoot\Solux-Dacos\Server)
-2024-11-06T13:23:05.632+09:00  INFO 30152 --- [    Test worker] c.e.S.SoluxDacosApplicationTests         : No active profile set, falling back to 1 default profile: "default"
-2024-11-06T13:23:06.471+09:00  INFO 30152 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-06T13:23:06.523+09:00  INFO 30152 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
-2024-11-06T13:23:07.288+09:00  INFO 30152 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-06T13:23:07.371+09:00  INFO 30152 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-06T13:23:07.408+09:00  INFO 30152 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-06T13:23:07.725+09:00  INFO 30152 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-06T13:23:07.761+09:00  INFO 30152 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-06T13:23:08.597+09:00  INFO 30152 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d978ab9
-2024-11-06T13:23:08.601+09:00  INFO 30152 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-06T13:23:09.357+09:00  INFO 30152 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-06T13:23:09.443+09:00  INFO 30152 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06T13:23:10.176+09:00  WARN 30152 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-06T13:23:10.202+09:00  INFO 30152 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-11-06T13:23:10.865+09:00  INFO 30152 --- [    Test worker] c.e.S.SoluxDacosApplicationTests         : Started SoluxDacosApplicationTests in 5.545 seconds (process running for 7.034)
+2024-11-07T17:17:51.970+09:00  INFO 25608 --- [    Test worker] c.e.S.SoluxDacosApplicationTests         : Starting SoluxDacosApplicationTests using Java 17.0.11 with PID 25608 (started by user in C:\Yoon_SpringBoot\Solux-Dacos\Server)
+2024-11-07T17:17:51.973+09:00  INFO 25608 --- [    Test worker] c.e.S.SoluxDacosApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-11-07T17:17:53.052+09:00  INFO 25608 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-07T17:17:53.130+09:00  INFO 25608 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2024-11-07T17:17:53.910+09:00  INFO 25608 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-07T17:17:53.977+09:00  INFO 25608 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-07T17:17:54.021+09:00  INFO 25608 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-07T17:17:54.386+09:00  INFO 25608 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-07T17:17:54.424+09:00  INFO 25608 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-07T17:17:54.849+09:00  INFO 25608 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3bf26810
+2024-11-07T17:17:54.853+09:00  INFO 25608 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-07T17:17:55.971+09:00  INFO 25608 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-07T17:17:56.047+09:00  INFO 25608 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-07T17:17:56.393+09:00  INFO 25608 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-07T17:17:56.894+09:00  WARN 25608 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-07T17:17:57.000+09:00  INFO 25608 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-11-07T17:17:57.758+09:00  WARN 25608 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-11-07T17:17:58.021+09:00  INFO 25608 --- [    Test worker] c.e.S.SoluxDacosApplicationTests         : Started SoluxDacosApplicationTests in 6.427 seconds (process running for 7.779)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
