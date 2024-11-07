@@ -36,6 +36,6 @@ public class UserController {
         UserInfoDTO userInfo = userService.getUserInfo(uuid);
 
         // 사용자 정보와 성공 메시지 반환
-        return new UserInfoDTO(userInfo.getUserId(), "로그인 성공: " + userInfo.getUserName());
+        return new UserInfoDTO(userInfo.getUserId(), "반갑습니다 : " + userInfo.getUserName());
     }
 }
