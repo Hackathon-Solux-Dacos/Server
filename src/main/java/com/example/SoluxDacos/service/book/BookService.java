@@ -7,8 +7,8 @@ import com.example.SoluxDacos.repository.book.UserResponseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
 @Service
 public class BookService {
@@ -22,11 +22,17 @@ public class BookService {
     // 1. 랜덤으로 5개의 책 정보 반환
     public List<Book> getRandomBooks() {
         List<Book> books = bookRepository.findAll();
-        Random random = new Random();
-        int fromIndex = random.nextInt(books.size());
-        int toIndex = Math.min(fromIndex + 5, books.size());  // fromIndex + 5로 설정하여 toIndex를 제한
-        return books.subList(fromIndex, toIndex);
+
+        // 책이 5개 이하일 경우 전체 리스트를 반환
+        if (books.size() <= 5) {
+            return books;
+        }
+
+        // 리스트를 랜덤하게 섞고, 처음 5개를 선택
+        Collections.shuffle(books);
+        return books.subList(0, 5);
     }
+
 
     // 2. 사용자 반응에 맞는 메시지 반환 -> 후에 데이터로 변경
     public String getReactionMessage(UserResponse userResponse) {

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/books")
@@ -21,9 +22,12 @@ public class BookController {
         return bookService.getRandomBooks();
     }
 
-    // 2. 사용자 반응에 맞는 메시지 반환 -> 후에 데이터 연결
-    @PostMapping("/response")
-    public String getReactionMessage(@RequestBody UserResponse userResponse) {
-        return bookService.getReactionMessage(userResponse);  // 반응 메시지를 반환
+    // 2. 사용자 반응에 맞는 책이름 반환 (5개 책에 대한 반응 -> 적합한 책 추천하는 알고리즘)
+    @PostMapping("/find/my_interest")
+    public List<String> getReactionMessages(@RequestBody List<UserResponse> userResponses) {
+        return userResponses.stream()
+                .map(bookService::getReactionMessage)  // 각 UserResponse에 대해 반응 메시지 생성
+                .collect(Collectors.toList());  // 결과를 리스트로 반환
     }
+
 }
