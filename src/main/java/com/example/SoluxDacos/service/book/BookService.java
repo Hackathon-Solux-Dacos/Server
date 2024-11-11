@@ -1,7 +1,6 @@
 package com.example.SoluxDacos.service.book;
 
 import com.example.SoluxDacos.domain.book.Book;
-import com.example.SoluxDacos.domain.book.UserResponse;
 import com.example.SoluxDacos.repository.book.BookRepository;
 import com.example.SoluxDacos.repository.book.UserResponseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,21 +32,4 @@ public class BookService {
         return books.subList(0, 5);
     }
 
-
-    // 2. 사용자 반응에 맞는 메시지 반환 -> 후에 데이터로 변경
-    public String getReactionMessage(UserResponse userResponse) {
-        String reactionMessage = "";
-
-        if ("좋아요".equals(userResponse.getUserReaction())) {
-            reactionMessage = "하하";
-        } else if ("싫어요".equals(userResponse.getUserReaction())) {
-            if (userResponse.getPassTime() <= 10) {
-                reactionMessage = "에구";
-            } else {
-                reactionMessage = "길어";
-            }
-        }
-
-        return reactionMessage;  // 메시지를 반환
-    }
 }
